@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="shop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="index.html">
+          <img src="logo.png" alt="Logo" class="logo" />
+        </a>
+        <nav>
+          <ul>
+            <li>
+              <a href="#"><i class="fas fa-user-plus"></i> Sign Up</a>
+            </li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn"
+                ><i class="fas fa-shopping-bag"></i> Services</a
+              >
+              <div class="dropdown-content">
+                <a href="#">Products</a>
+                <a href="#">Promo</a>
+                <a href="#">Free Shipping</a>
+              </div>
+            </li>
+            <li><a href="#home">Contacts</a></li>
+            <li><a href="#news">News</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="content-container">
+      <div class="form-container">
+        <h1>Fill Up Your Cart Here</h1>
+        <p>We've got affordable products for your pleasure</p>
+
+        <label for="item-name">Item Name:</label>
+        <select id="item-name" aria-label="Select item name">
+          <option value="">Select item</option>
+          <option value="Nestle MILO Activ-GO Sachet 6x800g">
+            Nestle Milo Activ-GO Sachet 6x800g
+          </option>
+          <option value="Peak Milk Gold 3x800g">Peak Milk Gold 3x800g</option>
+          <option value="Daawat Basmati Rice 50g">
+            Daawat Basmati Rice 50g
+          </option>
+          <option value="Ayoola Fufu Flour 5kg">Ayoola Fufu Flour 5kg</option>
+          <option value="Golden Penny Semovita 2kg">
+            Golden Penny Semovita 2kg
+          </option>
+          <option value="Dangote Sugar Sachet 25g">
+            Dangote Sugar Sachet 25g
+          </option>
+        </select>
+
+        <label for="item-price">Item Price:</label>
+        <input
+          type="text"
+          id="item-price"
+          placeholder="Enter item price"
+          aria-label="Enter item price"
+        />
+
+        <button id="add-item" aria-label="Add item to cart">
+          Add Item to Cart
+        </button>
+        <button id="remove-item" aria-label="Remove last item from cart">
+          Remove Last Item from Cart
+        </button>
+      </div>
+      <!--
+      <div class="products">
+        <div class="product">
+          <img src="image1.png" alt="Product 1" />
+          <p>Peak Milk Gold 3x800g</p>
+          <p>&#8358;10.00</p>
+        </div>
+        <div class="product">
+          <img src="image2.png" alt="Product 2" />
+          <p>Nestle MILO Activ-GO Sachet 6x800g</p>
+          <p>&#8358;20.00</p>
+        </div>
+        <div class="product">
+          <img src="image3.png" alt="Product 3" />
+          <p>Daawat Basmati Rice 50g</p>
+          <p>&#8358;30.00</p>
+        </div>
+        <div class="product">
+          <img src="image4.png" alt="Product 4" />
+          <p>Product 1</p>
+          <p>&#8358;10.00</p>
+        </div>
+        <div class="product">
+          <img src="image5.png" alt="Product 5" />
+          <p>Product 2</p>
+          <p>&#8358;20.00</p>
+        </div>
+        <div class="product">
+          <img src="image6.png" alt="Product 6" />
+          <p>Product 3</p>
+          <p>&#8358;30.00</p>
+        </div>
+      </div>-->
+
+      <section class="cart-info">
+        <p id="total-items">
+          Total Items:<i class="fas fa-shopping-cart"></i>
+          0
+        </p>
+        <p id="total-price">Total Price: &#8358;0.00</p>
+        <p id="free-shipping">Free Shipping: Not Eligible</p>
+        <p id="messages"></p>
+      </section>
+    </main>
+
+    <section class="cart-items" id="cart-items"></section>
+    <script src="index.js"></script>
+  </body>
+</html>

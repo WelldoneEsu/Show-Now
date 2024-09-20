@@ -112,6 +112,7 @@ main {
   animation: slide-right 1s ease-out forwards;
 }
 
+
 @keyframes slide-right {
   0% {
     transform: translateX(100%); /* Start off-screen (right) */
@@ -200,4 +201,34 @@ button {
 }
 .cart-info {
   margin-top: 20px;
+}
+@media(max-width:768px){
+  html{
+    font-size: 50%;
+  }
+  .hero h1{
+    
+    z-index: 2;
+    font-weight: bolder;
+  }
+  .hero p{
+   font-weight: bolder;
+    z-index: 2;
+  }
+  .img1{
+    top:15rem;
+    width:50%;
+    height: 50%;
+  }
+  .chop{
+    width: 20vw;
+    height: 5vh;
+    top:55rem;
+    z-index: 3;
+    position: absolute;
+    left:90rem;
+  }
+  .chop a{
+    text-decoration: none;
+  }
 }

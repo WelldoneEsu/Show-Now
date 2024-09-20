@@ -198,6 +198,11 @@ button:hover {
   background-color:#018d01f2;
 }
 @media (max-width: 768px) {
+  body{overflow-x: hidden;
+  }
+  html{
+    font-size: 50%;
+  }
   .container {
     flex-direction: column;
     align-items: flex-start;
@@ -210,6 +215,10 @@ button:hover {
 
   .form-container,
   .products {
-    width: 100%;
+    position: relative;
+    left:-10rem;
+    top:3rem;
+
+    width: 80%;
   }
 }
